@@ -13,10 +13,20 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="Filns_Interfaces">
+      <HintPath>..\..\Filns_Interfaces\Filns_Interfaces\Filns_Interfaces\bin\Debug\net5.0\Filns_Interfaces.dll</HintPath>
+    </Reference>
     <Reference Include="WPF_CloseButton">
       <HintPath>DLL\WPF_CloseButton.dll</HintPath>
     </Reference>
   </ItemGroup>
+
+    <ItemGroup>
+    <Reference Include="Filns_Backend">
+      <HintPath>DLL\Filns_Backend.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 
   <ItemGroup>
     <Resource Include="Images\temp.png">

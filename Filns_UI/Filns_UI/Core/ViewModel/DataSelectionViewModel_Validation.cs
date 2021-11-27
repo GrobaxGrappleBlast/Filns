@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using Filns_UI.Core.Model;
 
 namespace Filns_UI.Core.ViewModel {
     partial class DataSelectionViewModel : INotifyPropertyChanged{

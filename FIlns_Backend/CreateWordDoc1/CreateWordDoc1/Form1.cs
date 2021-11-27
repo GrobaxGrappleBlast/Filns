@@ -39,11 +39,17 @@ namespace CreateWordDoc1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            aliasList = WordReader.ReadAlias(@"C:\Users\45615\source\repos\CreateWordDoc1\CreateWordDoc1\temp2.docx");
+            aliasList = WordReader.ReadAlias(
+                @"C:\Users\45615\source\repos\CreateWordDoc1\CreateWordDoc1\exampleFiles\temp2.docx");
             alias2 = aliasList.ToArray();
-            WordGenerator.CreateWordDocument(@"C:\Users\45615\source\repos\CreateWordDoc1\CreateWordDoc1\temp2.docx", @"C:\Users\45615\Desktop\diplom.docx", alias2, DataSheetReader2.ReadSheet(@"C:\Users\45615\source\repos\CreateWordDoc1\CreateWordDoc1\testsheet1.xlsx", 1));
-            
-
+            WordGenerator.CreateWordDocument(
+                @"C:\Users\45615\source\repos\CreateWordDoc1\CreateWordDoc1\exampleFiles\temp2.docx",
+                @"C:\Users\45615\Desktop\diplom.docx",
+                alias2,
+                DataSheetReader2.ReadSheet(
+                    @"C:\Users\45615\source\repos\CreateWordDoc1\CreateWordDoc1\exampleFiles\testsheet1.xlsx",
+                    1)
+                );
         }
     }
 }

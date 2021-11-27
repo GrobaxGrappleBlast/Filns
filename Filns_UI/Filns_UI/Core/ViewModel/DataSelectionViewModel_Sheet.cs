@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 using System.Windows.Media;
 using Filns_UI.Core.View;
 using WPF_CloseButton;
-
+using Filns_Interfaces;
+using Filns_UI.Core.Model;
 
 namespace Filns_UI.Core.ViewModel {
 
@@ -33,10 +34,6 @@ namespace Filns_UI.Core.ViewModel {
         public static int _sheetCounter;
 
         public partial void init() {
-            /*_sheetCounter = 0;
-            foreach(SheetItem i in sheetsCollection ){
-                i.indexID = _sheetCounter++;
-            }*/
             onChange("sheetsCollection");
         }
 
@@ -73,8 +70,8 @@ namespace Filns_UI.Core.ViewModel {
             }
             return LIST;
             
-            DataSheetDTO convertSheetItem(SheetItem item){
-                return new DataSheetDTO(item.input1String , item.input2String);
+            IDataSheet convertSheetItem(SheetItem item){
+                return new DataSheetM(item.input1String , item.input2String);
             }
         } 
 

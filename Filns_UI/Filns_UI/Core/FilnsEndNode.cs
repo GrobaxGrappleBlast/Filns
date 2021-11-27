@@ -5,20 +5,22 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Filns_Interfaces;
+using Filns_Backend;
+using Filns_UI.Core.Model;
 
 namespace Filns_UI.Core {
+
     static class FilnsEndNode {
 
         public static void Create(DataSelectionViewModel viewModel) {
 
             IDataSheet[] sheets = viewModel.getDataSheets().ToArray();
             IDocument document = viewModel.getDocument();
-            IData data = new Data(document, sheets);
+            IData data = new DataM(document, sheets);
 
-            Trace.WriteLine("text");
-            Console.WriteLine(data);
-            Trace.WriteLine("text");
-            // TODO DLL CREATE THINGS 
+            Program backend = new Program();
+            backend.CreateDocument(data);
 
         }
 
@@ -26,7 +28,7 @@ namespace Filns_UI.Core {
             
             IDataSheet[] sheets = viewModel.getDataSheets().ToArray();
             IDocument document = viewModel.getDocument();
-            IData data = new Data(document, sheets);
+            IData data = new DataM(document, sheets);
 
             Console.WriteLine(data);
             // TODO DLL VALIDATE THESE OBJECTS 

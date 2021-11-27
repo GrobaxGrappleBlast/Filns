@@ -7,6 +7,8 @@ using WPF_CloseButton;
 using System.Windows;
 using System.Windows.Media;
 using System.Windows.Controls;
+using Filns_Interfaces;
+
 
 namespace Filns_UI.Core.View {
     public class DataSheet : SheetItem , IDataSheet{

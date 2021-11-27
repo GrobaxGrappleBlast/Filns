@@ -8,7 +8,7 @@ using Word = Microsoft.Office.Interop.Word;
 using System.Windows.Forms;
 using System.IO;
 
-namespace CreateWordDoc1
+namespace Filns_Backend
 {
     class WordReader
     {

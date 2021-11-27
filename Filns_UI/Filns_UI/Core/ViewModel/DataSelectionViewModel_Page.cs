@@ -7,12 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using Filns_Interfaces;
+using Filns_UI.Core.Model;
+
 
 namespace Filns_UI.Core.ViewModel {
     partial class DataSelectionViewModel : INotifyPropertyChanged{
         
-        public ObservableCollection<DataVariableM> PageVariables_Collection = new ObservableCollection<DataVariableM>();
-        public ObservableCollection<DataVariableM> PageVariables { get{ return PageVariables_Collection;  }  set { PageVariables_Collection = value; } }
+        public ObservableCollection<DocAttributeM> PageVariables_Collection = new ObservableCollection<DocAttributeM>();
+        public ObservableCollection<DocAttributeM> PageVariables { get{ return PageVariables_Collection;  }  set { PageVariables_Collection = value; } }
 
         public string documentPath;
         

@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Word = Microsoft.Office.Interop.Word;
 
-namespace CreateWordDoc1
+namespace Filns_Backend
 {
     class WordGenerator
     {
