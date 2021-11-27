@@ -11,7 +11,6 @@ namespace Filns_Backend
 {
     class WordGenerator
     {
-
         private void FindAndReplace(Word.Application wordApp, object toFindText, object replaceWithText)
         {
             object matchCase = true;

@@ -10,7 +10,6 @@ namespace Filns_Backend
     class DataSheetReader2
     {
         //https://l.facebook.com/l.php?u=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F29219683%2Fhow-to-find-all-named-ranges-in-a-workbook%3Ffbclid%3DIwAR1gjh8fkxzqXoLnh8ht9YktPpdIzhmvxYLwGOKz9XAuIrFs_B02bCPrRyk&h=AT05CpPpo5-WF5JJWDCrE8HZk-MrVtEQou2x5ITp-e6qfRmP_fMC23Sp81hpNnHjTJ6GT3UZtIUZWr_mRnXgR77oDsRRK-uM2-8L63q9pnpwxeAAP1YAGbhblWETqEG9hf59xg
-
         internal object[,] ReadSheet(object filename, int sheet)
         {
             object[,] finalVal = null;
@@ -25,6 +24,7 @@ namespace Filns_Backend
                 if (worksheet.Range[n.Name].Value2 != null)
                 {
                     val = worksheet.Range[n.Name].Value2;
+                    int a = 12;
                     
                 }
                 finalVal = val;

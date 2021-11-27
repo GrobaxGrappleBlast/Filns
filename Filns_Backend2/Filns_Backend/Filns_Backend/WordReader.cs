@@ -32,11 +32,12 @@ namespace Filns_Backend
                 object isVisible = false;
                 wordApp.Visible = false;
 
-                document = wordApp.Documents.Open(ref filename, ref missing, ref readOnly,
-                        ref missing, ref missing, ref missing,
-                        ref missing, ref missing, ref missing,
-                        ref missing, ref missing, ref missing,
-                        ref missing, ref missing, ref missing, ref missing);
+                document = wordApp.Documents.Open(
+                ref filename, ref missing, ref readOnly,
+                ref missing, ref missing, ref missing,
+                ref missing, ref missing, ref missing,
+                ref missing, ref missing, ref missing,
+                ref missing, ref missing, ref missing, ref missing);
 
                 // Reads text from word doc
                 document.ActiveWindow.Selection.WholeStory();
