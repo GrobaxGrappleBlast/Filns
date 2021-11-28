@@ -19,6 +19,15 @@ namespace Filns_UI.Core {
             IDocument document = viewModel.getDocument();
             IData data = new DataM(document, sheets);
 
+            string extension = data.document.filepath.Split(".")[1];
+            string[] temppath =   data.document.filepath.Split("\\");
+            string path = "";
+            for( int i = 0 ; i < temppath.Length - 1 ; i--) { // i do not want the last element;
+                path += "\\" +temppath[ i ];
+            }
+            path += "myResultingFile" + extension;
+            data.resultDoc = new Document(path);
+
             Program backend = new Program();
             backend.CreateDocument(data);
 
