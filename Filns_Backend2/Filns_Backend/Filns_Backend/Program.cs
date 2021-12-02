@@ -33,7 +33,7 @@ namespace Filns_Backend
     public class Program
     {
 
-        SheetReaderManager readMGR = new SheetReaderManager();
+        SheetReaderManager readMGR       = new SheetReaderManager();
         DocumentGeneratorManager wordMGR = new DocumentGeneratorManager();
         IDocumentGenerator docGen;
 
@@ -53,7 +53,7 @@ namespace Filns_Backend
                 {
                     try
                     {
-                        ext = sheet.path.Split(".").Last();      //GET EXTENSION FOR SHEET
+                        ext = sheet.path.Split(".").Last();             //GET EXTENSION FOR SHEET
                         ISheetReader reader = readMGR.getHandler(ext);  //GET HANDLER FOR THAT EXTENSION  
                         readNsheet.Add( (reader,sheet) );               // - something
                     }
@@ -65,7 +65,7 @@ namespace Filns_Backend
                 }
 
                 // Foreach sheet, Add the results of pair values to the dictionary. 
-                Dictionary<string , string > AVPair = new Dictionary<string, string>();
+                Dictionary< string , string > AVPair = new Dictionary<string, string>();
                 foreach( (ISheetReader,DataSheet) pair in readNsheet )
                 {
                     Dictionary<string , string > currentRes = pair.Item1.readSheet(pair.Item2);

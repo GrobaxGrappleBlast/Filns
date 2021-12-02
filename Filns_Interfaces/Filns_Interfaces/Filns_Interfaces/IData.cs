@@ -1,4 +1,6 @@
-    namespace Filns_Interfaces {
+using System.Collections.Generic;
+
+namespace Filns_Interfaces {
         public interface IData{
             IDocument resultDoc { get; set; }
             IDocument document { get; set; }

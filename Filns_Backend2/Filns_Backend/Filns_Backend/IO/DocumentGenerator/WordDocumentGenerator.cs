@@ -89,6 +89,7 @@ namespace Filns_Backend {
 
         private WordReader _read   = new WordReader();
         private WordGenerator_2 _gen = new WordGenerator_2();
+
         private string[] _extensions = { "docx"};
 
         public string[ ] supportedExtensions { get { return _extensions; } }
@@ -100,9 +101,7 @@ namespace Filns_Backend {
             
 
 
-            //List<ISheetData> validated = 
-
-            /*
+            List<ISheetData> validated = 
             _gen.CreateWordDocument(
                 data.document.filepath,
                 data.resultDoc.filepath,
@@ -110,7 +109,7 @@ namespace Filns_Backend {
                 DataSheetReader2.ReadSheet(
                     data.dataSheets[0].path,
                     1)
-                );*/
+                );
         }
 
     }
