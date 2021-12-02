@@ -96,7 +96,7 @@ namespace Filns_Backend {
         public WordDocumentGenerator(){}
 
         public void Generate(IData data , Dictionary<string,string> aliasValue){
-
+            /*
             List<string> aliasArr = _read.ReadAlias(data.document.filepath);
             
 
@@ -109,7 +109,7 @@ namespace Filns_Backend {
                 DataSheetReader2.ReadSheet(
                     data.dataSheets[0].path,
                     1)
-                );
+                );*/
         }
 
     }
