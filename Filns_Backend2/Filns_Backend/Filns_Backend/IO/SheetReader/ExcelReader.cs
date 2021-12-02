@@ -43,7 +43,7 @@ namespace Filns_Backend {
             
             foreach (Excel.Name name in workBookNames)
                 if (worksheet.Range[name.Name].Value2 != null) {
-                    Excel.Range val = worksheet.Range[name.Name].Value2;
+                    object[,] val = worksheet.Range[name.Name].Value2;
                     data.Add( name.Name , val.ToString() );
                 }
 

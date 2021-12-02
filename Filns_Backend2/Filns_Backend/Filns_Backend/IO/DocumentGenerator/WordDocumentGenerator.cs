@@ -96,20 +96,16 @@ namespace Filns_Backend {
         public WordDocumentGenerator(){}
 
         public void Generate(IData data , Dictionary<string,string> aliasValue){
-            /*
+            
             List<string> aliasArr = _read.ReadAlias(data.document.filepath);
             
 
-
-            List<ISheetData> validated = 
             _gen.CreateWordDocument(
                 data.document.filepath,
-                data.resultDoc.filepath,
-                alias2,
-                DataSheetReader2.ReadSheet(
-                    data.dataSheets[0].path,
-                    1)
-                );*/
+                data.resultDoc.filepath, 
+                aliasArr,
+                aliasValue
+                );
         }
 
     }

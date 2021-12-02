@@ -5,8 +5,8 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Reflection;
 using Word = Microsoft.Office.Interop.Word;
-using System.Windows.Forms;
 using System.IO;
+using System.Windows.Forms;
 
 namespace Filns_Backend
 {
@@ -20,7 +20,7 @@ namespace Filns_Backend
             Word.Document document = null;
 
             // for containing the read document text
-            string docText = String.Empty;
+            string docText = "";
 
             // for extracting aliases from document text
             string matchPattern = "<(.*?)>";

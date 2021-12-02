@@ -12,11 +12,11 @@ namespace Filns_Backend
         static void Main(string[] args){
 
             Document doc = new Document();
-            doc.filepath = "C:\\Users\\hansb\\source\\repos\\FILNS_DATA\\Filns_Backend2\\Filns_Backend\\Filns_Backend\\exampleFiles\\temp2.docx";
+            doc.filepath = "C:\\Users\\45615\\source\\repos\\Filns\\Filns_Backend2\\Filns_Backend\\Filns_Backend\\exampleFiles\\temp2.docx";
 
             DataSheet sheet = new DataSheet();
             sheet.alias = "sheetAlias";
-            sheet.path = " C:\\Users\\hansb\\source\\repos\\FILNS_DATA\\Filns_Backend2\\Filns_Backend\\Filns_Backend\\exampleFiles\\Testsheet1.xlsx";
+            sheet.path = "C:\\Users\\45615\\source\\repos\\Filns\\Filns_Backend2\\Filns_Backend\\Filns_Backend\\exampleFiles\\Testsheet1.xlsx";
             DataSheet[] sheetArr = new DataSheet[1];
             sheetArr[ 0 ] = sheet;
 
