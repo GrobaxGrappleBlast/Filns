@@ -1,19 +1,9 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using Filns_UI.Core.View;
-using Filns_UI.Core;
+using WPF_CloseButton;
 
 namespace Filns_UI.Core.View
 {
@@ -28,11 +18,11 @@ namespace Filns_UI.Core.View
         public DataSheetsContainer(){}
 
 
-        public void addChild(DataSheet sheet){
+        public void addChild(SheetItem sheet){
             stackPanel.Children.Add(sheet);
         }
 
-        public void removeChild(DataSheet sheet) {
+        public void removeChild(SheetItem sheet) {
              stackPanel.Children.Remove( sheet );
         }
 

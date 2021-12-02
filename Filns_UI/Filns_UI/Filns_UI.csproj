@@ -13,25 +13,27 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="Filns_Backend">
+      <HintPath>..\..\Filns_Backend2\Filns_Backend\Filns_Backend\bin\Debug\net5.0-windows\Filns_Backend.dll</HintPath>
+    </Reference>
     <Reference Include="Filns_Interfaces">
       <HintPath>..\..\Filns_Interfaces\Filns_Interfaces\Filns_Interfaces\bin\Debug\net5.0\Filns_Interfaces.dll</HintPath>
     </Reference>
+  
     <Reference Include="WPF_CloseButton">
       <HintPath>DLL\WPF_CloseButton.dll</HintPath>
     </Reference>
   </ItemGroup>
 
-    <ItemGroup>
-    <Reference Include="Filns_Backend">
-      <HintPath>DLL\Filns_Backend.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
-
   <ItemGroup>
     <Resource Include="Images\temp.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="DLL\" />
   </ItemGroup>
 
 

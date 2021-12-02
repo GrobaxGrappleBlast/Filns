@@ -1,15 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <ApplicationIcon />
-    <StartupObject />
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+
   </PropertyGroup>
 
-    <ItemGroup>
+  <ItemGroup>
     <COMReference Include="Microsoft.Office.Interop.Word">
       <WrapperTool>tlbimp</WrapperTool>
       <VersionMinor>7</VersionMinor>
@@ -29,6 +28,7 @@
       <EmbedInteropTypes>true</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="ExcelDataReader" Version="3.6.0" />

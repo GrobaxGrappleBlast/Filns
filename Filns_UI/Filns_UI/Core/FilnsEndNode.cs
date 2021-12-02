@@ -21,8 +21,9 @@ namespace Filns_UI.Core {
 
             string extension = data.document.filepath.Split(".")[1];
             string[] temppath =   data.document.filepath.Split("\\");
+
             string path = "";
-            for( int i = 0 ; i < temppath.Length - 1 ; i--) { // i do not want the last element;
+            for( int i = 0 ; i < temppath.Length - 1 ; i++) { // i do not want the last element;
                 path += "\\" +temppath[ i ];
             }
             path += "myResultingFile" + extension;

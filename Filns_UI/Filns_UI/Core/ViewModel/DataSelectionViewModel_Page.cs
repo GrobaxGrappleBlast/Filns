@@ -31,8 +31,8 @@ namespace Filns_UI.Core.ViewModel {
         // ################################# //
         public IDocument getDocument(){
             
-            if(     string.IsNullOrEmpty( documentPath )    )
-                throw new Exception("document path was not set before requesting Creation");
+            //if(     string.IsNullOrEmpty( documentPath )    )
+            //    throw new Exception("document path was not set before requesting Creation");
 
             return new Document(documentPath);
         }

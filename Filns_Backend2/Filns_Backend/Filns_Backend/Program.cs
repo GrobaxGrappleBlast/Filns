@@ -8,7 +8,7 @@ using KeyValPairStrStr = System.Collections.Generic.KeyValuePair<string,string>;
 
 namespace Filns_Backend
 {
-    public class MAIN { 
+    /*public class MAIN { 
         static void Main(string[] args){
 
             Document doc = new Document();
@@ -28,7 +28,7 @@ namespace Filns_Backend
             p.CreateDocument(data);
 
         }   
-    }
+    }*/
 
     public class Program
     {
@@ -48,8 +48,8 @@ namespace Filns_Backend
             // SHEETS OPERATIONS  --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
                 // SHEETS GET A READER FOR EACH SHEET IN CASE OF DIFFERENT FILE TYPE ; 
-                List<(ISheetReader,DataSheet)> readNsheet = new List<(ISheetReader, DataSheet)>();
-                foreach(DataSheet sheet in data.dataSheets)
+                List<(ISheetReader,IDataSheet)> readNsheet = new List<(ISheetReader, IDataSheet)>();
+                foreach(IDataSheet sheet in data.dataSheets)
                 {
                     try
                     {
@@ -66,7 +66,7 @@ namespace Filns_Backend
 
                 // Foreach sheet, Add the results of pair values to the dictionary. 
                 Dictionary< string , string > AVPair = new Dictionary<string, string>();
-                foreach( (ISheetReader,DataSheet) pair in readNsheet )
+                foreach( (ISheetReader,IDataSheet) pair in readNsheet )
                 {
                     Dictionary<string , string > currentRes = pair.Item1.readSheet(pair.Item2);
                     foreach(KeyValPairStrStr p in currentRes)

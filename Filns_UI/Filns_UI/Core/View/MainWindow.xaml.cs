@@ -49,9 +49,7 @@ namespace Filns_UI
         byte r = 0,g=0,b=0;
         private void addSheet_click(object sender , RoutedEventArgs e) {
             
-            r += 0; g +=o; b += o;
-            ((Button)sender).Background = new SolidColorBrush(Color.FromRgb(r , g , b));
-
+            
             this.ViewModel.addSheetItem();
         
         }
