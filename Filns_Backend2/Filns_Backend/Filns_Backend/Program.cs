@@ -9,6 +9,7 @@ using Filns_Backend;
 
 namespace Filns_Backend
 {
+    /*
     public class MAIN { 
         static void Main(string[] args){
 
@@ -37,7 +38,7 @@ namespace Filns_Backend
 
         }   
     }
-
+    */
     public class Program
     {
 
