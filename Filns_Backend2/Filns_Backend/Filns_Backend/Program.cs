@@ -5,14 +5,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Filns_Interfaces;
 using KeyValPairStrStr = System.Collections.Generic.KeyValuePair<string,string>;
+using Filns_Backend;
 
 namespace Filns_Backend
 {
-    /*public class MAIN { 
+    public class MAIN { 
         static void Main(string[] args){
 
             Document doc = new Document();
-            doc.filepath = @"C:\Users\hansb\source\repos\FILNS_DATA\Filns_Backend2\Filns_Backend\Filns_Backend\exampleFiles\temp2.docx";
+            doc.filepath = @"C:\Users\hansb\source\repos\FILNS_DATA\Filns_UI\Filns_UI\exampleFiles\temp2.docx";
+
+            Document res = new Document();
+            res.filepath = @"C:\Users\hansb\source\repos\FILNS_DATA\Filns_UI\Filns_UI\exampleFiles\RESULT.docx";
+
 
             DataSheet sheet = new DataSheet();
             sheet.alias = "sheetAlias";
@@ -23,12 +28,15 @@ namespace Filns_Backend
             Data data = new Data();
             data.dataSheets = sheetArr;
             data.document = doc;
+            data.resultDoc = res;
 
             Program p = new Program();
+
+            Console.WriteLine("dfghjkkjhgfdftyukmnbvftyujmn v");
             p.CreateDocument(data);
 
         }   
-    }*/
+    }
 
     public class Program
     {
@@ -74,22 +82,15 @@ namespace Filns_Backend
                         AVPair.Add(p.Key , p.Value);
                     }
                 }
-            
+
             // DOCUMENT OPERATIONS --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
-
-
-
-                try
-                {
-                    ext = data.document.filepath.Split(".").Last();     // GET EXTENSION FOR Document
-                    docGen = wordMGR.getHandler(ext);                   // get Handler for that document;
-                    docGen.Generate(data, AVPair );
-                }
-                catch(Exception e)
-                {
-                    Console.WriteLine(e.Message);
-                    // TODO IMPLEMENT NOTIFICATION FOR LOADING AN UNWANTED TYPE OF FILE EXTENSION
-                }
+    
+          
+                ext = data.document.filepath.Split(".").Last();     // GET EXTENSION FOR Document
+                docGen = wordMGR.getHandler(ext);                   // get Handler for that document;
+                docGen.Generate(data, AVPair );
+                
+                
       
         }
     }

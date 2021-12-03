@@ -9,7 +9,7 @@ namespace Filns_Backend {
     public class DocumentGeneratorManager : AbstractAssortmentManager<IDocumentGenerator> {
 
         public void initialize(){
-            this.addHandler( new WordDocumentGenerator() );
+            this.addHandler( new WordGenerator() );
         }
 
    

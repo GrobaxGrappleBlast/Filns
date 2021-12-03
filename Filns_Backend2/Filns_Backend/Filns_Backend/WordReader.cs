@@ -8,7 +8,7 @@ using Word = Microsoft.Office.Interop.Word;
 using System.IO;
 using System.Windows.Forms;
 
-namespace Filns_Backend
+namespace Filns_BackendOLD
 {
     class WordReader
     {
@@ -42,8 +42,11 @@ namespace Filns_Backend
                 // Reads text from word doc
                 document.ActiveWindow.Selection.WholeStory();
                 document.ActiveWindow.Selection.Copy();
-                IDataObject data = Clipboard.GetDataObject();
-                docText = data.GetData(DataFormats.Text).ToString();
+                
+                //IDataObject data = Clipboard.GetDataObject();
+                //docText = data.GetData(DataFormats.Text).ToString();
+
+                docText = document.WordOpenXML;
             }
             else
             {
