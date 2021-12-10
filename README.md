@@ -29,6 +29,8 @@ Go to the next tab. and select a Word document you wish to replace with.
 
 go to the next tab and click complete. 
 
+now a new Document should have apeared next to the original. named Result.docx
+
 ## Document Syntax 
 
 in the word document Write "[aliasName]" where aliasName is the wished keyword for that data entry. 
