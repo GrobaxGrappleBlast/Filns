@@ -14,7 +14,7 @@
 
   <ItemGroup>
     <Reference Include="Filns_Backend">
-      <HintPath>..\..\Filns_Backend2\Filns_Backend\Filns_Backend\bin\Debug\net5.0-windows\Filns_Backend.dll</HintPath>
+      <HintPath>..\..\Filns_Backend2\Filns_Backend\Filns_Backend\bin\Release\net5.0-windows\Filns_Backend.dll</HintPath>
     </Reference>
     <Reference Include="Filns_Interfaces">
       <HintPath>..\..\Filns_Interfaces\Filns_Interfaces\Filns_Interfaces\bin\Debug\net5.0\Filns_Interfaces.dll</HintPath>
