@@ -1,0 +1,10 @@
+C:\Users\hansb\source\repos\FILNS_DATA\Filns_Backend2\Filns_Backend\Filns_Backend\obj\Debug\net5.0\Filns_Backend.csproj.AssemblyReference.cache
+C:\Users\hansb\source\repos\FILNS_DATA\Filns_Backend2\Filns_Backend\Filns_Backend\obj\Debug\net5.0\Filns_Backend.Form1.resources
+C:\Users\hansb\source\repos\FILNS_DATA\Filns_Backend2\Filns_Backend\Filns_Backend\obj\Debug\net5.0\Filns_Backend.csproj.GenerateResource.cache
+C:\Users\hansb\source\repos\FILNS_DATA\Filns_Backend2\Filns_Backend\Filns_Backend\obj\Debug\net5.0\Filns_Backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hansb\source\repos\FILNS_DATA\Filns_Backend2\Filns_Backend\Filns_Backend\obj\Debug\net5.0\Filns_Backend.AssemblyInfoInputs.cache
+C:\Users\hansb\source\repos\FILNS_DATA\Filns_Backend2\Filns_Backend\Filns_Backend\obj\Debug\net5.0\Filns_Backend.AssemblyInfo.cs
+C:\Users\hansb\source\repos\FILNS_DATA\Filns_Backend2\Filns_Backend\Filns_Backend\obj\Debug\net5.0\Filns_Backend.csproj.CoreCompileInputs.cache
+C:\Users\hansb\source\repos\FILNS_DATA\Filns_Backend2\Filns_Backend\Filns_Backend\obj\Debug\net5.0\Interop.Microsoft.Office.Interop.Word.dll
+C:\Users\hansb\source\repos\FILNS_DATA\Filns_Backend2\Filns_Backend\Filns_Backend\obj\Debug\net5.0\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\hansb\source\repos\FILNS_DATA\Filns_Backend2\Filns_Backend\Filns_Backend\obj\Debug\net5.0\Filns_Backend.csproj.ResolveComReference.cache

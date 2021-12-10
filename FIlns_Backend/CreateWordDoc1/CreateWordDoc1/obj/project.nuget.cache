@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "AUNlqhl4/o2Dxp4RN2R6jGoANBVjB/A/g9a9+9vEPDsF4BN6Sf8RBoXYISQQg6Q50jCR5fD6vgyVsH4Z/v/cIQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hansb\\source\\repos\\FILNS_DATA\\FIlns_Backend\\CreateWordDoc1\\CreateWordDoc1\\CreateWordDoc1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hansb\\.nuget\\packages\\exceldatareader\\3.6.0\\exceldatareader.3.6.0.nupkg.sha512",
+    "C:\\Users\\hansb\\.nuget\\packages\\exceldatareader.dataset\\3.6.0\\exceldatareader.dataset.3.6.0.nupkg.sha512",
+    "C:\\Users\\hansb\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\hansb\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

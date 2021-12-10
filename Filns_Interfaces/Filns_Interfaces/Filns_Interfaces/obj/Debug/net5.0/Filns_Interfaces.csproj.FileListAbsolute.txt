@@ -1,0 +1,12 @@
+C:\Users\hansb\source\repos\FILNS_DATA\Filns_Interfaces\Filns_Interfaces\Filns_Interfaces\obj\Debug\net5.0\Filns_Interfaces.csproj.AssemblyReference.cache
+C:\Users\hansb\source\repos\FILNS_DATA\Filns_Interfaces\Filns_Interfaces\Filns_Interfaces\obj\Debug\net5.0\Filns_Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hansb\source\repos\FILNS_DATA\Filns_Interfaces\Filns_Interfaces\Filns_Interfaces\obj\Debug\net5.0\Filns_Interfaces.AssemblyInfoInputs.cache
+C:\Users\hansb\source\repos\FILNS_DATA\Filns_Interfaces\Filns_Interfaces\Filns_Interfaces\obj\Debug\net5.0\Filns_Interfaces.AssemblyInfo.cs
+C:\Users\hansb\source\repos\FILNS_DATA\Filns_Interfaces\Filns_Interfaces\Filns_Interfaces\obj\Debug\net5.0\Filns_Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\hansb\source\repos\FILNS_DATA\Filns_Interfaces\Filns_Interfaces\Filns_Interfaces\bin\Debug\net5.0\Filns_Interfaces.deps.json
+C:\Users\hansb\source\repos\FILNS_DATA\Filns_Interfaces\Filns_Interfaces\Filns_Interfaces\bin\Debug\net5.0\Filns_Interfaces.dll
+C:\Users\hansb\source\repos\FILNS_DATA\Filns_Interfaces\Filns_Interfaces\Filns_Interfaces\bin\Debug\net5.0\ref\Filns_Interfaces.dll
+C:\Users\hansb\source\repos\FILNS_DATA\Filns_Interfaces\Filns_Interfaces\Filns_Interfaces\bin\Debug\net5.0\Filns_Interfaces.pdb
+C:\Users\hansb\source\repos\FILNS_DATA\Filns_Interfaces\Filns_Interfaces\Filns_Interfaces\obj\Debug\net5.0\Filns_Interfaces.dll
+C:\Users\hansb\source\repos\FILNS_DATA\Filns_Interfaces\Filns_Interfaces\Filns_Interfaces\obj\Debug\net5.0\ref\Filns_Interfaces.dll
+C:\Users\hansb\source\repos\FILNS_DATA\Filns_Interfaces\Filns_Interfaces\Filns_Interfaces\obj\Debug\net5.0\Filns_Interfaces.pdb

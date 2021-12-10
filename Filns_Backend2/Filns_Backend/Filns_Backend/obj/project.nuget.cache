@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "SRAyfgfC18+cwtyQaUV/I6XdMWgXgv/wWrje6mR1ofSZKY0WHZXiLTS2QPTIYfh3WL4fXcL+Dt6hp3fxBFgJmA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hansb\\source\\repos\\FILNS_DATA\\Filns_Backend2\\Filns_Backend\\Filns_Backend\\Filns_Backend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hansb\\.nuget\\packages\\exceldatareader\\3.6.0\\exceldatareader.3.6.0.nupkg.sha512",
+    "C:\\Users\\hansb\\.nuget\\packages\\exceldatareader.dataset\\3.6.0\\exceldatareader.dataset.3.6.0.nupkg.sha512",
+    "C:\\Users\\hansb\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\hansb\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
