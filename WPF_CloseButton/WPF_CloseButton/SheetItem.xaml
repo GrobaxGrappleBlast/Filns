@@ -1,0 +1,119 @@
+﻿<UserControl x:Class="WPF_CloseButton.SheetItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF_CloseButton"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="200"
+             Background="Transparent"
+             >
+    <UserControl.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border 
+                            CornerRadius="{Binding BtnCornerRadius, RelativeSource={RelativeSource AncestorType=UserControl}, Mode=TwoWay, TargetNullValue=1, FallbackValue=1}" 
+                            Background="{TemplateBinding Background}"  
+                            BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="{TemplateBinding BorderThickness}" >
+                            <ContentPresenter 
+                                x:Name="contentPresenter" 
+                                ContentTemplate     ="{TemplateBinding ContentTemplate}" 
+                                Content             ="{TemplateBinding Content}" 
+                                HorizontalAlignment ="{TemplateBinding HorizontalContentAlignment}" 
+                                Margin              ="{TemplateBinding Padding}" 
+                                VerticalAlignment   ="{TemplateBinding VerticalContentAlignment}"
+                            />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <local:ClippingBorder 
+            Background="Transparent"
+            CornerRadius    ="{Binding CornerRadius     , RelativeSource={RelativeSource AncestorType=UserControl}, Mode=TwoWay, TargetNullValue=1, FallbackValue=1}"
+            BorderThickness ="{Binding BorderThickness  , RelativeSource={RelativeSource AncestorType=UserControl}, Mode=TwoWay, TargetNullValue=1, FallbackValue=1}"
+            BorderBrush     ="{Binding BorderBrush      , RelativeSource={RelativeSource AncestorType=UserControl}, Mode=TwoWay, TargetNullValue=black, FallbackValue=black}"
+            Grid.Column="0" Grid.Row="0">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition MinWidth="80" Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Border
+                Background="{Binding PrimaryColor, RelativeSource={RelativeSource AncestorType=UserControl}, Mode=TwoWay, TargetNullValue=#224 , FallbackValue=#224}"
+                Grid.Row="0"    Grid.Column="2" 
+                Padding = "{Binding InnerPadding ,RelativeSource={RelativeSource AncestorType=UserControl}, Mode=TwoWay, TargetNullValue=10, FallbackValue=10}"
+                >
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="{Binding InnerPadding , RelativeSource={RelativeSource AncestorType=UserControl}, Mode=TwoWay, TargetNullValue=10 , FallbackValue=10}"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+
+                    <Button Grid.Row="0" BorderThickness="0" 
+                            Background = "{Binding Btn1Color, RelativeSource={RelativeSource AncestorType=UserControl}, Mode=TwoWay, TargetNullValue=gray, FallbackValue=gray}"
+                            Content = "{Binding Btn1Symbol, RelativeSource={RelativeSource AncestorType=UserControl}, Mode=TwoWay, TargetNullValue=..., FallbackValue=...}"
+                            Click="btn1Click"
+                            />
+                    <Button Grid.Row="2" BorderThickness="0" 
+                            Background = "{Binding Btn2Color, RelativeSource={RelativeSource AncestorType=UserControl}, Mode=TwoWay, TargetNullValue=gray, FallbackValue=gray}"
+                            Content = "{Binding Btn2Symbol, RelativeSource={RelativeSource AncestorType=UserControl}, Mode=TwoWay, TargetNullValue=..., FallbackValue=...}"
+                            Click="btn2Click"/>
+                </Grid>
+            </Border>
+            <Border
+                
+                Background="{Binding Background, RelativeSource={RelativeSource AncestorType=UserControl}, Mode=TwoWay, TargetNullValue=white , FallbackValue=white}" 
+                Grid.Column="0" Grid.Row="0"
+                Padding="{Binding InnerPadding , RelativeSource={RelativeSource AncestorType=UserControl}, Mode=TwoWay, TargetNullValue=10 , FallbackValue=10}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="{Binding InnerPadding , RelativeSource={RelativeSource AncestorType=UserControl}, Mode=TwoWay, TargetNullValue=10 , FallbackValue=10}" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="{Binding InnerPadding , RelativeSource={RelativeSource AncestorType=UserControl}, Mode=TwoWay, TargetNullValue=10 , FallbackValue=10}" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    
+                    <Label Grid.Row="0" Grid.Column="0"
+                           Content="{Binding label1String , RelativeSource={RelativeSource AncestorType=UserControl}, Mode=TwoWay, TargetNullValue=Label1 , FallbackValue=Label1}"
+                           />
+                    <Label Grid.Row="2" Grid.Column="0"
+                           Content="{Binding label2String , RelativeSource={RelativeSource AncestorType=UserControl}, Mode=TwoWay, TargetNullValue=Label2 , FallbackValue=Label2}"
+                           />
+
+                    <TextBox Grid.Row="0" Grid.Column="2" BorderThickness="0" Background="Transparent"
+                                Text="{
+                        Binding input1String ,
+                        RelativeSource={RelativeSource AncestorType=UserControl},
+                        Mode=TwoWay, 
+                        TargetNullValue=___ , 
+                        FallbackValue=___}"
+                                IsReadOnly ="{Binding input1ReadOnly, Mode=TwoWay, TargetNullValue=false}"
+                               />
+                    <TextBox Grid.Row="2" Grid.Column="2" Background="Transparent" BorderThickness="0" 
+                               Text="{
+                        Binding input2String , 
+                        RelativeSource={RelativeSource AncestorType=UserControl}, 
+                        Mode=TwoWay, 
+                        TargetNullValue=___ , 
+                        FallbackValue=___}"
+                                IsReadOnly ="{Binding input2ReadOnly, Mode=TwoWay, TargetNullValue=false}"
+                               />
+                    
+                </Grid>
+            </Border>
+            <!-- Control Box -->
+            <!--Border Grid.Row="0" Grid.Column="4" Grid.RowSpan="60"  Background="DarkBlue" ClipToBounds="true"/-->
+      
+        </Grid>
+    </local:ClippingBorder>
+</UserControl>
